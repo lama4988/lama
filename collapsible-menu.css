@@ -1,0 +1,43 @@
+/* Add this to your existing styles.css */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button {
+    display: none; /* Initially hide the button on larger screens */
+    cursor: pointer;
+}
+
+.close-button {
+    display: none; /* Initially hide the close button on larger screens */
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #navList {
+        display: none; /* Hide the menu on smaller screens by default */
+    }
+
+    .show {
+        display: flex !important;
+    }
+
+   
+
+    .menu-button {
+        display: block; /* Display the menu button on smaller screens */
+    }
+
+    
+}

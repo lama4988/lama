@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lama Alshammri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collapsible-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="flex flex-row justify-between">
+            <p class="logo"><a href="Home.html" style="text-decoration: none; color: white;">Lama Alshammri</a></p>
+            <nav class="nav-container">
+                <button class="menu-button" id="menub" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars-staggered"></i></button>
+             
+
+            </nav>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="container " >
+          <div class="box box1 flex  flex-col" id="navList">
+            <ul class="ull" >
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li><a href="Portfolio.html">Resume</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="ContactMe.html">Contact</a></li>
+               
+
+            </ul>
+          </div>
+          <div class="box box2 flex flex-col center">
+            <h2 class="themeT">Who Am I !</h2>
+            <div class="innerContainer" style="flex-direction: column;">
+
+                <p >Hello! I'm Lama Alshammri, a 22-year-old tech enthusiast from Riyadh. Passionate about cutting-edge technology, I'm on a journey to explore coding, AI, and the latest tech trends. Join me as I embrace creativity and continuous learning in the dynamic world of innovation.</p>
+                <p>Feel free to use this as a starting point and adjust it to fit your style and preferences!</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Lama Alshammri</p>
+    </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            var navList = document.getElementById('navList');
+            console.log(navList)
+            navList.classList.toggle('show');
+           
+        }
+
+      
+
+    </script>
+</body>
+
+</html>
